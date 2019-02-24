@@ -5,7 +5,7 @@ import re  # 正则表达式
 file = open('0004.txt', 'r')
 str = file.read()
 
-reobj = re.compile('\b?(\w+)\b?')
+reobj = re.compile('\b?(\w+)\b?') # \b 匹配单词边界，\w 匹配字母数字下划线，＋表示不止一个字母
 words = reobj.findall(str)
 
 wordDict = {}
